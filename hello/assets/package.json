@@ -8,11 +8,14 @@
   "dependencies": {
     "milligram": "^1.4.1",
     "phoenix": "file:../deps/phoenix",
-    "phoenix_html": "file:../deps/phoenix_html"
+    "phoenix_html": "file:../deps/phoenix_html",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-env": "^7.12.17",
+    "@babel/preset-react": "^7.12.13",
     "babel-loader": "^8.0.0",
     "copy-webpack-plugin": "^4.5.0",
     "css-loader": "^0.28.10",
