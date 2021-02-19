@@ -68,11 +68,7 @@ defmodule Hello.Game do
 
   def random_secret() do
     random_number = Enum.random(1234..9876)
-    digit_4 = rem(random_number, 10)
-    digit_3 = rem(round(random_number/10), 10)
-    digit_2 = rem(round(random_number/100), 10)
-    digit_1 = rem(round(random_number/1000), 10)
-    digits = [digit_1, digit_2, digit_3, digit_4]
+    digits = Integer.digits(random_number) 
     if length(digits) != length(Enum.uniq(digits)) do
       random_secret()
     else
